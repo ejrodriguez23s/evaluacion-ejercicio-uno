@@ -43,7 +43,6 @@ public class TrainApplication extends SpringBootServletInitializer implements Co
 	 */
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(TrainApplication.class);
-		app.setAdditionalProfiles("CONSOLA");
 		app.run(args);
 	}
 
