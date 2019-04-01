@@ -1,4 +1,4 @@
-Aplicación realizada con Spring boot, basa en micro servicios, 
+Aplicación realizada con Spring boot, basada en microservicios, 
 con gradle nos ayuda a administrar las dependencias.
 
 Ide: STS
@@ -21,6 +21,7 @@ En consola.
 
 
 Servicio web.
+
 http://localhost:8282/evaluacionWS/api/getevaluacion
 
 
