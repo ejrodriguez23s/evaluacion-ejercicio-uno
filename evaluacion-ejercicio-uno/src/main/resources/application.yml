@@ -1,0 +1,31 @@
+logging:
+    #console: %d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+  level:
+    ec.evaluacion.ejercicio.uno: DEBUG
+---
+spring:
+  thread:
+    maxPoolSize: 8
+    corePoolSize: 4
+---
+server:
+  port: 8282
+  servlet:
+    context-path: /evaluacionWS
+---
+spring:    
+    profiles: CONSOLA
+    datastart:
+        datos: AB5,BC4,CD8,DC8,DE6,AD5,CE2,EB3,AE7
+
+---
+spring:    
+    profiles: PRUEBAS
+    datastart:
+        datos: AB5,BC4,CD8,DC8,DE6,AD5,CE2,EB3,AE7
+      
+---
+spring:    
+    profiles: pro
+    datastart:
+        datos: AB5,BC4,CD8,DC8,DE6,AD5,CE2,EB3,AE7
