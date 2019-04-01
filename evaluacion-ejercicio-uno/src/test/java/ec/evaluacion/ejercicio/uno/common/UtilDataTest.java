@@ -7,7 +7,6 @@ package ec.evaluacion.ejercicio.uno.common;
  * @version 1.0
  * @since 1.0.0
  */
-public  class UtilDataTest {
-	
-	
+public class UtilDataTest {
+
 }

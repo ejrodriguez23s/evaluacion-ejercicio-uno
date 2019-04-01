@@ -29,9 +29,9 @@ import ec.evaluacion.ejercicio.uno.model.Town;
 public class TrainService implements ITrainService {
 
 	private static final Logger LOG = LoggerFactory.getLogger(TrainService.class);
-	
+
 	private Graph<Town> graph = new Graph<>();
-	
+
 	private Map<String, Town> towns = new HashMap<>();
 
 	/*
@@ -45,7 +45,7 @@ public class TrainService implements ITrainService {
 	@Override
 	public void loadInitialData(List<String> listData) {
 		try {
-			if(listData.isEmpty()) {
+			if (listData.isEmpty()) {
 				throw new TrainException("List of initial data is empty");
 			}
 			Map<String, Object> mapReturn = UtilData.loadData(listData);
@@ -55,7 +55,7 @@ public class TrainService implements ITrainService {
 			towns.forEach((nameT, town) -> {
 				graph.addNode(town);
 			});
-			
+
 			mapRout.forEach((nameT, setR) -> {
 				setR.forEach((route) -> {
 					graph.addEdge(route.getStartTown(), route.getDestTown(), route.getDistance());

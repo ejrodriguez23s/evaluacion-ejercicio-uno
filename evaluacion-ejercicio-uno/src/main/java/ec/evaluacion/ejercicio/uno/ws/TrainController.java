@@ -1,6 +1,5 @@
 package ec.evaluacion.ejercicio.uno.ws;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -41,7 +40,7 @@ public class TrainController {
 	@Lazy
 	@Autowired
 	private ITrainService trainService;
-	
+
 	@Lazy
 	@Autowired
 	private TrainProperties trainProperties;
@@ -68,7 +67,7 @@ public class TrainController {
 		} catch (JsonProcessingException e) {
 			LOG.error("Problems when parcelling data {} ", e);
 			return new ResponseEntity<>("Problemas al obtener datos.", HttpStatus.NOT_FOUND);
-		}catch (TrainException e) {
+		} catch (TrainException e) {
 			LOG.error("{} ", e.getMessage());
 			return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
 		}
@@ -87,7 +86,7 @@ public class TrainController {
 		try {
 			// load initial data
 			trainService.loadInitialData(listData);
-			
+
 			TrainVO = new TrainVO("1. The distance of the route A-B-C.",
 					trainService.distance(Arrays.asList("A", "B", "C")));
 			list.add(TrainVO);

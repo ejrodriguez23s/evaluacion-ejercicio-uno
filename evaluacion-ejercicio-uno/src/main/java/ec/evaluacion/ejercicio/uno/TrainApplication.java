@@ -35,7 +35,6 @@ public class TrainApplication extends SpringBootServletInitializer implements Co
 	@Lazy
 	@Autowired
 	private TrainProperties trainProperties;
-	
 
 	/**
 	 * Main to run app.

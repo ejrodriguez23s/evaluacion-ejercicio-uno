@@ -26,11 +26,10 @@ public class TrainServiceTest {
 	@Lazy
 	@Autowired
 	private ITrainService trainService;
-	
 
 	@Test
-	public void  initObjects() {
-		trainService.loadInitialData(Arrays.asList("AB5","BC4","CD8","DC8","DE6","AD5","CE2","EB3","AE7"));
+	public void initObjects() {
+		trainService.loadInitialData(Arrays.asList("AB5", "BC4", "CD8", "DC8", "DE6", "AD5", "CE2", "EB3", "AE7"));
 	}
 
 	@Test

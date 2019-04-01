@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.NoSuchElementException;
 import java.util.PriorityQueue;
 import java.util.Set;
 
@@ -70,6 +69,7 @@ public class Graph<T> {
 
 	/**
 	 * Get all the adjacent graph of the given node.
+	 * 
 	 * @param node
 	 * @return
 	 * @author erodriguez on 2019/3/29.
@@ -81,8 +81,8 @@ public class Graph<T> {
 
 	/**
 	 * 
-	 * @param start  the start node.
-	 * @param dest The destination node.
+	 * @param start the start node.
+	 * @param dest  The destination node.
 	 * @return
 	 * @author erodriguez on 2019/3/29.
 	 */
@@ -93,7 +93,7 @@ public class Graph<T> {
 	}
 
 	/**
-	 * Get weight of the given edge. 
+	 * Get weight of the given edge.
 	 * 
 	 * @param start
 	 * @param dest
@@ -104,7 +104,6 @@ public class Graph<T> {
 	private int weightForEdge(T start, T dest) {
 		return graph.get(start).getNeighbours().get(dest);
 	}
-
 
 	/**
 	 * Run a Dijkstra
@@ -156,7 +155,7 @@ public class Graph<T> {
 
 	/**
 	 * 
-	 * @param start the start node.
+	 * @param start  the start node.
 	 * @param stop
 	 * @param filter
 	 * @return
@@ -246,7 +245,6 @@ public class Graph<T> {
 		}
 	}
 
-
 	/**
 	 * Get total distance of route.
 	 * 
@@ -272,12 +270,12 @@ public class Graph<T> {
 		return distance;
 	}
 
-
 	/**
-	 *Count number of possible routes starting from start and ending at dest with a
+	 * Count number of possible routes starting from start and ending at dest with a
 	 * maximum number of maxHops.
-	 * @param start the start node.
-	 * @param dest the destination node.
+	 * 
+	 * @param start   the start node.
+	 * @param dest    the destination node.
 	 * @param maxHops number of stops in route.
 	 * @return
 	 * @author erodriguez on 2019/3/29.
@@ -409,9 +407,10 @@ public class Graph<T> {
 	}
 
 	/**
-	 * Represents a path containing the nodes in
-	 * the order in which they have been traversed.
-	 *  @author erodriguez on 2019/3/29.
+	 * Represents a path containing the nodes in the order in which they have been
+	 * traversed.
+	 * 
+	 * @author erodriguez on 2019/3/29.
 	 */
 	public class GraphPath {
 		private final String PATH_SEPARATOR = "->";
@@ -428,7 +427,7 @@ public class Graph<T> {
 
 		/**
 		 * Creates a new graphPath with the provided nodes and length.
-		 *  
+		 * 
 		 * @param nodes
 		 * @param length
 		 * @author erodriguez on 2019/3/29.
@@ -454,7 +453,6 @@ public class Graph<T> {
 				return false;
 			}
 		}
-
 
 		/**
 		 * Append node to the end of the path.
@@ -499,9 +497,9 @@ public class Graph<T> {
 			return distance;
 		}
 
-	
 		/**
 		 * Total length of path in terms of number of hops.
+		 * 
 		 * @return
 		 */
 		public int hopCount() {

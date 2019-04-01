@@ -1,12 +1,9 @@
 package ec.evaluacion.ejercicio.uno.common;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 import java.util.Set;
 
 import org.slf4j.Logger;

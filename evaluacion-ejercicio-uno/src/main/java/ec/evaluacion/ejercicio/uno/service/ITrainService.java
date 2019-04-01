@@ -17,15 +17,14 @@ import ec.evaluacion.ejercicio.uno.common.TrainException;
 @Lazy
 @Service
 public interface ITrainService {
-	
+
 	/**
 	 * Load Initial Data
 	 * 
-	 * @param listData 
+	 * @param listData
 	 * @author erodriguez on 2019/3/29.
 	 */
 	public void loadInitialData(List<String> listData);
-	
 
 	/**
 	 * shortest path

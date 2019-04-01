@@ -6,9 +6,9 @@ package ec.evaluacion.ejercicio.uno.common;
  *
  */
 @SuppressWarnings("serial")
-public class TrainException extends RuntimeException{
-	
+public class TrainException extends RuntimeException {
+
 	public TrainException(String message) {
-        super(message);
-    }
+		super(message);
+	}
 }

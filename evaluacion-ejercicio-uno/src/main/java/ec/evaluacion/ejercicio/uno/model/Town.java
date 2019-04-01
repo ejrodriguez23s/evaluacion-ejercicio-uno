@@ -1,8 +1,5 @@
 package ec.evaluacion.ejercicio.uno.model;
 
-import java.util.List;
-
-
 /**
  * Model representing a town.
  *
